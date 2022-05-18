@@ -61,16 +61,13 @@ const cotizar = () => {
       "",
       "success"
     );
-  }
-
-  // Operador lógico OR
-  $mensajeCotizar.textContent =
-    mensajeMonto ||
+  } else {
     swal(
       "No se pudo calcular. Por favor reintente ingresando un valor numérico mayor a cero.",
       "",
       "error"
     );
+  }
 };
 
 let criptos;
