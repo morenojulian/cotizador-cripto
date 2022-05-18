@@ -1,0 +1,39 @@
+<!DOCTYPE html>
+<html lang="es">
+  <head>
+    <meta charset="UTF-8" />
+    <meta http-equiv="X-UA-Compatible" content="IE=edge" />
+    <meta name="viewport" content="width=<device-width>, initial-scale=1.0" />
+    <link rel="stylesheet" href="/style.css" />
+    <script src="//cdnjs.cloudflare.com/ajax/libs/numeral.js/2.0.6/numeral.min.js"></script>
+    <script src="https://unpkg.com/sweetalert/dist/sweetalert.min.js"></script>
+
+    <title>Criptos</title>
+  </head>
+  <body>
+    <header>
+      <h1 class="title">CRYPTO</h1>
+      <nav>
+        <a href="#">Contacto</a>
+        <a href="#">Cotizar</a>
+      </nav>
+    </header>
+
+    <main>
+      <div class="sectionCotizar">
+        <div class="boxSelect">
+          <select id="selectCripto"></select>
+          <p>Precio: <strong id="precio"></strong></p>
+        </div>
+        <div class="boxCantidad">
+          <label for="cantidad">Cantidad a cotizar</label>
+          <input type="text" name="cant" id="cantidad" />
+        </div>
+
+        <div class="buttonCot"><button id="botonCotizar">Cotizar</button></div>
+      </div>
+    </main>
+
+    <script src="index.js"></script>
+  </body>
+</html>
